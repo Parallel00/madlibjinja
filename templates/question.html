@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Madlibs Assignment</title>
+</head>
+<body>
+	<h1>Madlibs!!/h1>
+	<form action="/story">
+		{% for prmt in prompts %}
+			<p>{{ prmt }}:
+				<input name="{{ prmt }}">
+			</p>
+		{% endfor %}
+		<button>Generate</button>
+	</form>
+</body>
+</html>
